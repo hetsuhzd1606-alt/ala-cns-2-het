@@ -1,0 +1,91 @@
+/* ==== Background ==== */
+body {
+  position: relative;
+  background: radial-gradient(circle at top, #020617, #000);
+  font-family: 'Poppins', sans-serif;
+  color: #e2e8f0;
+  overflow-x: hidden;
+}
+
+/* ==== Navbar Links ==== */
+.nav-link {
+  color: #cbd5e1;
+  transition: all 0.4s ease;
+  font-weight: 500;
+  letter-spacing: 0.5px;
+}
+.nav-link:hover {
+  color: #7dd3fc;
+  text-shadow: 0 0 12px #7dd3fc, 0 0 20px #38bdf8;
+  transform: translateY(-2px);
+}
+
+/* ==== Button Styles ==== */
+.btn-primary, .btn-secondary {
+  display: inline-block;
+  padding: 1rem 2.2rem;
+  border-radius: 1rem;
+  font-weight: 600;
+  letter-spacing: 0.6px;
+  transition: 0.3s ease;
+  text-align: center;
+  position: relative;
+  z-index: 1;
+  backdrop-filter: blur(8px);
+}
+
+/* ==== Primary Button ==== */
+.btn-primary {
+  background: linear-gradient(135deg, #06b6d4, #3b82f6);
+  color: #0f172a;
+  box-shadow: 0 0 25px rgba(59,130,246,0.6);
+}
+.btn-primary:hover {
+  transform: scale(1.08);
+  box-shadow: 0 0 35px rgba(59,130,246,0.9);
+}
+
+/* ==== Secondary Button ==== */
+.btn-secondary {
+  border: 2px solid rgba(94,234,212,0.8);
+  color: #5eead4;
+  background: rgba(255,255,255,0.05);
+  box-shadow: 0 0 15px rgba(94,234,212,0.2);
+}
+.btn-secondary:hover {
+  background: linear-gradient(90deg, #5eead4, #14b8a6);
+  color: #0f172a;
+  transform: scale(1.08);
+  box-shadow: 0 0 30px rgba(94,234,212,0.7);
+}
+
+/* ==== Frosted Glass Panels (Optional for sections) ==== */
+.glass-panel {
+  background: rgba(255,255,255,0.05);
+  border: 1px solid rgba(255,255,255,0.1);
+  border-radius: 1rem;
+  backdrop-filter: blur(10px);
+  padding: 2rem;
+  box-shadow: 0 0 25px rgba(0,0,0,0.3);
+}
+
+/* ==== Particle Canvas ==== */
+#particles {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 0;
+  width: 100%;
+  height: 100%;
+  background: transparent;
+  pointer-events: none;
+}
+
+/* ==== Subtle Glow Animations ==== */
+@keyframes glow {
+  0%, 100% { text-shadow: 0 0 10px #38bdf8, 0 0 20px #0ea5e9; }
+  50% { text-shadow: 0 0 20px #7dd3fc, 0 0 40px #38bdf8; }
+}
+h1, h2, h3 {
+  animation: glow 3s ease-in-out infinite alternate;
+}
