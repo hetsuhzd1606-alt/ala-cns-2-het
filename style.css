@@ -1,27 +1,29 @@
 /* ==== Background ==== */
 body {
   position: relative;
-  background: radial-gradient(circle at top, #020617, #000);
+  background: radial-gradient(circle at top, #1a001f, #000);
   font-family: 'Poppins', sans-serif;
-  color: #e2e8f0;
+  color: #f5eaff;
   overflow-x: hidden;
 }
 
 /* ==== Navbar Links ==== */
 .nav-link {
-  color: #cbd5e1;
+  color: #d8b4fe;
   transition: all 0.4s ease;
   font-weight: 500;
   letter-spacing: 0.5px;
 }
+
 .nav-link:hover {
-  color: #7dd3fc;
-  text-shadow: 0 0 12px #7dd3fc, 0 0 20px #38bdf8;
+  color: #f472b6;
+  text-shadow: 0 0 12px #f472b6, 0 0 20px #e879f9;
   transform: translateY(-2px);
 }
 
 /* ==== Button Styles ==== */
-.btn-primary, .btn-secondary {
+.btn-primary,
+.btn-secondary {
   display: inline-block;
   padding: 1rem 2.2rem;
   border-radius: 1rem;
@@ -36,30 +38,32 @@ body {
 
 /* ==== Primary Button ==== */
 .btn-primary {
-  background: linear-gradient(135deg, #06b6d4, #3b82f6);
-  color: #0f172a;
-  box-shadow: 0 0 25px rgba(59,130,246,0.6);
+  background: linear-gradient(135deg, #c084fc, #e879f9);
+  color: #1a002b;
+  box-shadow: 0 0 25px rgba(232,121,249,0.6);
 }
+
 .btn-primary:hover {
   transform: scale(1.08);
-  box-shadow: 0 0 35px rgba(59,130,246,0.9);
+  box-shadow: 0 0 35px rgba(232,121,249,0.9);
 }
 
 /* ==== Secondary Button ==== */
 .btn-secondary {
-  border: 2px solid rgba(94,234,212,0.8);
-  color: #5eead4;
+  border: 2px solid rgba(244,114,182,0.8);
+  color: #f472b6;
   background: rgba(255,255,255,0.05);
-  box-shadow: 0 0 15px rgba(94,234,212,0.2);
-}
-.btn-secondary:hover {
-  background: linear-gradient(90deg, #5eead4, #14b8a6);
-  color: #0f172a;
-  transform: scale(1.08);
-  box-shadow: 0 0 30px rgba(94,234,212,0.7);
+  box-shadow: 0 0 15px rgba(244,114,182,0.2);
 }
 
-/* ==== Frosted Glass Panels (Optional for sections) ==== */
+.btn-secondary:hover {
+  background: linear-gradient(90deg, #f472b6, #c084fc);
+  color: #1a002b;
+  transform: scale(1.08);
+  box-shadow: 0 0 30px rgba(244,114,182,0.7);
+}
+
+/* ==== Frosted Glass Panels ==== */
 .glass-panel {
   background: rgba(255,255,255,0.05);
   border: 1px solid rgba(255,255,255,0.1);
@@ -83,9 +87,10 @@ body {
 
 /* ==== Subtle Glow Animations ==== */
 @keyframes glow {
-  0%, 100% { text-shadow: 0 0 10px #38bdf8, 0 0 20px #0ea5e9; }
-  50% { text-shadow: 0 0 20px #7dd3fc, 0 0 40px #38bdf8; }
+  0%, 100% { text-shadow: 0 0 10px #f472b6, 0 0 20px #c084fc; }
+  50% { text-shadow: 0 0 20px #e879f9, 0 0 40px #c084fc; }
 }
+
 h1, h2, h3 {
   animation: glow 3s ease-in-out infinite alternate;
 }
